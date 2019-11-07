@@ -1,5 +1,8 @@
 # T8-javascript-IV
+<<<<<<< HEAD
 Semana de Javascript 4
+=======
+>>>>>>> 9c60bf0340cb42beffa1726afe324c4d017f2bc9
 Turma 8 | Front-end | 2019 | Semana 13 | Javascript IV
 
 > Nessa semana revisaremos o conteúdo de javascript pré react.
@@ -11,7 +14,10 @@ Turma 8 | Front-end | 2019 | Semana 13 | Javascript IV
 Nessa aula vimos:
 * [Git-flow](#git-flow)
 * [Array](#array)
+<<<<<<< HEAD
 * [Try e Catch](#try-e-catch)
+=======
+>>>>>>> 9c60bf0340cb42beffa1726afe324c4d017f2bc9
 * [Exercícios](#exercicios)
 * [Conteúdo para estudo](#conteúdo-para-estudo)
 
