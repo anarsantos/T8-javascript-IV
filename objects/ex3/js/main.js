@@ -27,22 +27,23 @@ let resultados = [
 ];
 
 
+const renderNavbar = new Navbar
 
-const newBar = new Navbar
-newBar.render()
+renderNavbar.render()
 
-
-
-document.querySelector('.cards').innerHTML = resultados.map(receita => {
+resultados.map(receita => {
     new Card(receita).render()
 })
 
-// map - retorna array com as informações processadas
+document.querySelector('.button__search').addEventListener('click', function(){
+    let inputValue = document.querySelector('.input__search').value.toUpperCase()
+    let achados = resultados.filter(receita => {
+        // o meu inputValue está incluso em alguma parte do título OU dos ingredientes.
+        return receita.titulo.toUpperCase().includes(inputValue) || receita.ingredientes.toUpperCase().includes(inputValue)
+    })
 
-// o forEach - não retorna um array, aplica a função fornecida para todos elementos do Array
-
-// join - transforma o resultado de array para string
-
-
-
-
+    document.querySelector('.cards').innerHTML = ""
+    achados.map(encontrado => {
+        new Card(encontrado).render()
+    })
+})
