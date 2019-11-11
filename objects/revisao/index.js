@@ -196,7 +196,17 @@ console.log(js4.dizMateria())
 js4.dizMateria = function(){
     return `A professora é: ${this.nome} e a materia é ${this.materia}`
 }
+
+const novaFilha = new Filha
+novaFilha.profissao = 'Atiz'
+console.log(novaFilha);
+const novaMae = new Mae
+console.log(novaMae);
+
+
 console.log(js4.dizMateria())
+
+// Herança
 
 const avo = { attr1: 'A'}
 const mae = {__proto__:avo, attr2: 'B', attr3:'E'}
