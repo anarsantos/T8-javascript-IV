@@ -263,12 +263,7 @@ const novaMae = new Mae
 console.log(novaMae);
 
 
-
-
-
-
-
-
+// Herança
 
 const avo = { attr1: 'A'}
 const mae = {__proto__:avo, attr2: 'B', attr3:'E'}
